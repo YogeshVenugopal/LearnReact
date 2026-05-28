@@ -1,10 +1,9 @@
 import React from 'react'
+import Approute from './Routes/Approute'
 
 function App() {
   return (
-    <div>
-      
-    </div>
+    <Approute/>
   )
 }
 
