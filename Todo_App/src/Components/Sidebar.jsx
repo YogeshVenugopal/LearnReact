@@ -2,8 +2,8 @@ import React from 'react'
 
 function Sidebar() {
   return (
-    <div>
-      Sidebar
+    <div className='w-[30rem]'>
+      Sidebar 
     </div>
   )
 }
