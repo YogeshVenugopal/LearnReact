@@ -1,5 +1,6 @@
 import { useContext, createContext, useState, useEffect } from "react";
 import axiosApi from "../Api/axios";
+import { product } from "../Api/productApi";
 
 export const ProductContext = createContext();
 
@@ -10,7 +11,7 @@ export const ProductProvider = ({children}) => {
 
     const fetchProductData = async() => {
         try {
-            const response = await axiosApi.get('/api/products')
+            const response = await axiosApi.get(`${product.GETALLPRODUCT}`)
             setData(response.data.data);
 
             console.log(response.data);
