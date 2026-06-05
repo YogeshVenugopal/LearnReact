@@ -1,11 +1,14 @@
 import React from 'react'
 import { ProductProvider } from './Context/ProductContext'
+import { CartProvider } from './Context/CartContext'
 
 const App = () => {
   return (
     <>
       <ProductProvider>
-        <h1></h1>
+        <CartProvider>
+          <h1></h1>
+        </CartProvider>
       </ProductProvider>
     </>
   )
