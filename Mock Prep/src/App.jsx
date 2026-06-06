@@ -1,10 +1,13 @@
 import React from 'react'
+import { ProductProvider } from './Context/ProductContext'
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <ProductProvider>
+        <h1></h1>
+      </ProductProvider>
+    </>
   )
 }
 
