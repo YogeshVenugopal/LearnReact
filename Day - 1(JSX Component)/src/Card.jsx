@@ -13,13 +13,13 @@ const Card = () => {
                     <h1 className='text-white text-2xl tex'>Name of the user</h1>
                     <p className=' text-white/70 text-sm'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio eveniet praesentium, eum ex natus laborum placeat aut assumenda omnis.</p>
                     <div className='w-full flex justify-around mt-2'>
-                        <div className='flex gap-1 items-center'>
+                        <div className='flex gap-1 items-center cursor-pointer'>
                             <Heart size={20}/> <p>2.3k</p>
                         </div>
-                        <div className='flex gap-1 items-center'>
+                        <div className='flex gap-1 items-center cursor-pointer'>
                             <ThumbsUp  size={20}/> <p>1k</p>
                         </div>
-                        <button className='px-5 py-2 rounded-3xl flex items-center gap-1 bg-white text-black'>
+                        <button className='px-5 py-2 rounded-3xl flex cursor-pointer items-center gap-1 bg-white text-black'>
                             <Plus /> Follow
                         </button>
                     </div>
