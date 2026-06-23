@@ -1,7 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import defaultImage from '/Images/default.png'
-
+import { useState } from 'react';
 import { Heart, ThumbsUp, Plus } from 'lucide-react';
 
 const Card = ({
@@ -9,20 +8,31 @@ const Card = ({
     name = "Sample",
     desc = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet consectetur deserunt dolor voluptas iure quasi totam deleniti in quisquam eos."
 }) => {
+
+    const[isFav, setIsFav] = useState(false);
+    const[isLike, setIsLike] = useState(false);
+
+    const handleFav = () => {
+        setIsFav(!isFav);
+    }
+
+    const handleLike = () => {
+        setIsLike(!isLike);
+    }
   return (
     <div className='w-[25rem] h-[30rem] rounded-[18px] shadow-lg inset-shadow-sm flex items-center justify-center text-white'>
         <div className='w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-[14px] relative overflow-hidden'>
             <img src={profile} alt="Profile Images" className='w-full h-full object-cover z-0'/>
-            <div className='absolute w-full h-1/2 bottom-0 right-0 bg-gradient-to-t from-stone-800 to-transparent blur-xl z-10' />
+            <div className='absolute w-full h-1/2 bottom-0 right-0 bg-gradient-to-t from-stone-800 to-transparent blur-sm z-10' />
             <div className='absolute w-full h-1/3 bottom-0 right-0 z-50'>
                 <div className='w-[90%] h-[90%] mx-auto z-50'>
                     <h1 className='text-white text-2xl font-bold'>{name}</h1>
                     <p className=' text-white/70 text-sm'>{desc}</p>
                     <div className='w-full flex justify-around mt-2'>
-                        <div className='flex gap-1 items-center cursor-pointer'>
+                        <div className={`flex gap-1 items-center cursor-pointer ${isFav ? "text-red-500" : ""}`} onClick={()=> handleFav()}>
                             <Heart size={20}/> <p>2.3k</p>
                         </div>
-                        <div className='flex gap-1 items-center cursor-pointer'>
+                        <div className={`flex gap-1 items-center cursor-pointer ${isLike ? "text-blue-500" : ""}`} onClick={() => handleLike()}>
                             <ThumbsUp  size={20}/> <p>1k</p>
                         </div>
                         <button className='px-5 py-2 rounded-3xl flex cursor-pointer items-center gap-1 bg-white text-black'>
