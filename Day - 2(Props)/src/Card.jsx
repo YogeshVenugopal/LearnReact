@@ -11,9 +11,9 @@ const Card = ({
 }) => {
   return (
     <div className='w-[25rem] h-[30rem] rounded-[18px] shadow-lg inset-shadow-sm flex items-center justify-center text-white'>
-        <div className='w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-[14px] bg-green-700 relative overflow-hidden'>
+        <div className='w-[calc(100%-12px)] h-[calc(100%-12px)] rounded-[14px] relative overflow-hidden'>
             <img src={profile} alt="Profile Images" className='w-full h-full object-cover z-0'/>
-            <div className='absolute w-full h-1/3 bottom-0 right-0 bg-green-800/50 blur-xl z-10' />
+            <div className='absolute w-full h-1/2 bottom-0 right-0 bg-gradient-to-t from-stone-800 to-transparent blur-xl z-10' />
             <div className='absolute w-full h-1/3 bottom-0 right-0 z-50'>
                 <div className='w-[90%] h-[90%] mx-auto z-50'>
                     <h1 className='text-white text-2xl font-bold'>{name}</h1>
