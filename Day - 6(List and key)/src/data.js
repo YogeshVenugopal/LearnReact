@@ -7,6 +7,7 @@ const val = [
     "offer": 0 ,
     "isOffer":false,
     "productImage": "/Images/cycle.png",
+    "description": "Sample description for the given product"
   },
   {
     "id": 2,
@@ -16,6 +17,7 @@ const val = [
     "isOffer":false,
     "offer": 0 ,
     "productImage": "/Images/phone.png",
+    "description": "Sample description for the given product"
   },
   {
     "id": 3,
@@ -25,6 +27,7 @@ const val = [
     "isOffer":false,
     "offer": 0 ,
     "productImage": "/Images/shoe.png",
+    "description": "Sample description for the given product"
   },
   {
     "id": 4,
@@ -34,6 +37,7 @@ const val = [
     "isOffer":false,
     "offer": 0 ,
     "productImage": "/Images/tab.png",
+    "description": "Sample description for the given product"
   },
   {
     "id": 5,
@@ -43,6 +47,7 @@ const val = [
     "star": 3.9,
     "isOffer":true,
     "productImage": "/Images/watch.png",
+    "description": "Sample description for the given product"
   },
   {
     "id": 6,
@@ -52,6 +57,7 @@ const val = [
     "isOffer":false,
     "offer": 0 ,
     "productImage": "/Images/monitor.png",
+    "description": "Sample description for the given product siufi segfisu sefuuief iufgiguf siue sfu s sfus fuuusi iusfu siu suehf aisuefo igsef oeiui "
   }
 ]
 export default val;
