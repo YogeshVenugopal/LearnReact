@@ -1,8 +1,7 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import defaultImage from '/Images/default.png'
 
-import { Heart, ThumbsUp, Plus } from 'lucide-react';
+import { Heart, ThumbsUp, Plus, Leaf } from 'lucide-react';
 
 const Card = ({
     profile = defaultImage,

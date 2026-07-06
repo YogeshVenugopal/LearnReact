@@ -5,7 +5,7 @@ import person from '/Images/person.png'
 const App = () => {
   return (
     <div className='w-full h-screen flex items-center justify-center'>
-        <Card profile={person} name="Sample" desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia saepe vel perspiciatis? Qui ipsa tempore reiciendis distinctio molestias debitis!"/>
+        <Card profile={person} name="Sunantha" desc="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente officia saepe vel perspiciatis? Qui ipsa tempore reiciendis distinctio molestias debitis!"/>
         <Card />
     </div>
   )
